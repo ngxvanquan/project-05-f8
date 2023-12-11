@@ -18,7 +18,52 @@
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
     <body>
-        <header class="header"></header>
+        <!-- ========== Header ========== -->
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <!-- Logo -->
+                    <img
+                        src="./assets/img/logo/logo.svg"
+                        alt=""
+                        class="header__logo"
+                    />
+
+                    <!-- NavBar -->
+                    <nav class="navbar">
+                        <ul class="header__list">
+                            <li class="header-item">
+                                <a
+                                    href="#!"
+                                    class="header-item__link header-item__link--active"
+                                    >Home</a
+                                >
+                            </li>
+                            <li class="header-item">
+                                <a href="#!" class="header-item__link"
+                                    >Products</a
+                                >
+                            </li>
+                            <li class="header-item">
+                                <a href="#!" class="header-item__link"
+                                    >Features</a
+                                >
+                            </li>
+                            <li class="header-item">
+                                <a href="#!" class="header-item__link">Blog</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="header__action">
+                        <button class="header__btn header__btn--signin">
+                            Log in
+                        </button>
+                        <button class="header__btn--signup btn">Sign up</button>
+                    </div>
+                </div>
+            </div>
+        </header>
         <main class="main"></main>
         <footer class="footer"></footer>
     </body>
