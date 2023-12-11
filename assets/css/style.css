@@ -5,6 +5,7 @@
 :root {
     --heading-color: #212832;
     --primary-color: #7264d6;
+    --desc-color: #696d76;
 }
 
 html {
@@ -61,8 +62,51 @@ button {
     line-height: var(--height); /* 175% */
 }
 
+.section-heading {
+    color: var(--heading-color);
+    font-weight: 700;
+}
+
+.section-heading.lv1 {
+    font-size: 6rem;
+    line-height: 1.16; /* 116.667% */
+}
+
+.section-heading.lv2 {
+    font-size: 4rem;
+    line-height: 1.25; /* 125% */
+}
+
+.section-subtitle {
+    position: relative;
+    margin-left: 30px;
+    color: #696d77;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
+}
+
+.section-subtitle::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -30px;
+    width: 18px;
+    height: 2px;
+    background: #696d77;
+}
+
+.section-desc {
+    color: var(--desc-color);
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.66; /* 166.667% */
+}
+
 /* ========== Header =========== */
 .header {
+    background: #fff;
     position: sticky;
     top: -40px;
     padding: 54px 0 10px;
@@ -130,4 +174,173 @@ button {
 .header__btn--signup {
     --height: 52px;
     min-width: 113px;
+}
+
+/* ========== Hero ========== */
+.hero {
+    padding: 88px 0 0;
+}
+
+.hero__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero__content {
+    width: 46%;
+}
+
+.hero__heading {
+    margin: 12px 0 20px;
+}
+
+.hero__highlight {
+    color: #7264d6;
+}
+
+.hero-form {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    height: 74px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 16px 42px 0px rgba(0, 0, 0, 0.07);
+}
+
+.hero-form__input {
+    padding: 0 23px;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    outline: none;
+    border: none;
+}
+
+.hero-form__input::placeholder {
+    color: var(--desc-color);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
+}
+
+.hero-form__submit {
+    background: #7264d6;
+}
+
+.hero__desc--bottom {
+    margin-top: 20px;
+    font-size: 1.4rem;
+    line-height: 1.71; /* 171.429% */
+}
+
+.hero__media {
+    margin-right: 174px;
+    position: relative;
+    width: 296px;
+    height: 562px;
+}
+
+.hero__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-box {
+    position: absolute;
+}
+
+.hero-deposite {
+    top: 113px;
+    left: -100px;
+    width: 174px;
+    height: 46px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.07);
+    display: flex;
+    align-items: center;
+    padding: 14px 10px;
+}
+
+.hero-deposite__text {
+    margin: 0 19px 0 8px;
+    color: #31456a;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+
+.hero-deposite__value {
+    color: #4ab5e3;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1; /* 100% */
+}
+
+.hero-interest {
+    top: 156px;
+    right: -174px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 29px 33px 30px;
+    width: 130px;
+    height: 130px;
+    background: #da6464;
+    border-radius: 50%;
+}
+
+.hero-interest__percent {
+    color: #fff;
+    text-align: center;
+    font-size: 4.4rem;
+    font-weight: 600;
+}
+
+.hero-interest__text {
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.hero-shield {
+    right: -72px;
+    bottom: 61px;
+    width: 124px;
+    height: 68px;
+    padding: 20px 14px 22px;
+    border-radius: 10px;
+    background: #439f90;
+
+    display: flex;
+    column-gap: 11px;
+    align-items: center;
+}
+
+.hero-shield__content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hero-shield__value {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+
+.hero-shield__text {
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1; /* 100% */
 }
