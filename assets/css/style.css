@@ -178,7 +178,7 @@ button {
 
 /* ========== Hero ========== */
 .hero {
-    padding: 88px 0 0;
+    padding: 88px 0 80px;
 }
 
 .hero__row {
@@ -343,4 +343,115 @@ button {
     font-size: 0.8rem;
     font-weight: 400;
     line-height: 1; /* 100% */
+}
+
+/* ========== Work ========== */
+.work {
+    padding: 80px 0;
+}
+
+.work__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.work__media {
+    position: relative;
+    width: 456px;
+    height: 619px;
+}
+
+.work__images {
+    position: relative;
+}
+
+.work__icon--bank {
+    position: absolute;
+    top: 76px;
+    right: 55px;
+}
+
+.work-box {
+    position: absolute;
+    z-index: 1;
+    right: -107px;
+    bottom: 96px;
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    width: 226px;
+    height: 77px;
+    border-radius: 8px;
+    background: #fffdfa;
+    box-shadow: 0px 14px 34px 0px rgba(0, 0, 0, 0.07);
+    padding: 15px 30px 15px 15px;
+}
+
+.work-box__title {
+    color: #212832;
+    font-family: Inter;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.work-box__desc {
+    white-space: nowrap;
+    color: var(--desc-color);
+    font-family: Inter;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.work__images::before {
+    content: "";
+    background: url(../img/work-bg.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 470px;
+    height: 550px;
+    bottom: -4px;
+    left: -4px;
+}
+
+.work__img {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.work__content {
+    width: 40%;
+}
+
+.work__heading {
+    margin-top: 12px;
+}
+
+.work__list {
+    margin-top: 70px;
+}
+
+.work-item__heading {
+    color: var(--heading-color);
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.45; /* 145.455% */
+}
+
+.work-item + .work-item {
+    margin-top: 28px;
+}
+
+.work-item__desc {
+    margin-top: 16px;
+    color: var(--desc-color);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
 }
