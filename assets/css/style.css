@@ -455,3 +455,142 @@ button {
     font-weight: 400;
     line-height: 1.75; /* 175% */
 }
+
+/* ========== Payment ========== */
+.payment {
+    padding: 80px 0;
+}
+
+.payment__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.payment__content {
+    width: 40%;
+}
+
+.payment__heading {
+    margin-top: 12px;
+}
+
+.payment__desc {
+    margin-top: 20px;
+}
+
+.payment__list {
+    margin-top: 28px;
+}
+
+.payment-item {
+    position: relative;
+    margin-left: 24px;
+    color: #212832;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.66; /* 166.667% */
+}
+
+.payment-item + .payment-item {
+    margin-top: 18px;
+}
+
+.payment-item::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -24px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #7264d6;
+}
+
+.payment__btn {
+    margin-top: 38px;
+}
+
+.payment__media {
+    position: relative;
+    margin-right: 88px;
+}
+
+.payment-send {
+    position: absolute;
+    top: -48px;
+    right: -88px;
+    width: 276px;
+    height: 86px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0px 14px 38px 0px rgba(0, 0, 0, 0.07);
+    display: flex;
+    align-items: center;
+    padding: 23px 13px;
+}
+
+.payment-send__column:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-left: 14px;
+}
+
+.payment-send__icon {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.payment-send__title {
+    color: #212832;
+    font-family: Inter;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.payment-send__desc {
+    color: #696d76;
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.payment-send__column:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 3px;
+    margin-left: 67px;
+}
+
+.payment-income {
+    position: absolute;
+    right: -88px;
+    bottom: -55px;
+    width: 120px;
+    height: 120px;
+    padding: 14px 15px 15px;
+    border-radius: 16px;
+    background: #439f90;
+}
+
+.payment-income__title {
+    margin-top: 14px;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.payment-income__value {
+    margin-top: 6px;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: normal;
+}
